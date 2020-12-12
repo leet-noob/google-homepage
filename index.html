@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+    <style>
+     html,body{
+            font-family: arial, sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            
+        }   
+        
+        
+           .smaller-image {
+            width: 30px;
+            height: 30px;
+        }
+        a:link{
+            color: black;
+            text-decoration: none;
+            opacity: 0.75;
+        }
+        a:visited{
+            color: black;
+            text-decoration: none;
+           opacity: 0.75;
+            
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        a:active{
+            text-decoration: underline;
+        }
+        .navbar {
+            display: flex;
+            justify-content: flex-start;
+            margin-right: 20px; 
+            margin-top: 20px;
+            margin-left: 20px;
+                   
+
+        }
+        
+        #navbar-right {
+            display: flex;
+            margin-left: auto; 
+          
+        }
+       .navbar a {
+           margin-right: 20px;
+             
+       }
+        
+       header {
+           font-size: 13px;
+       }
+       #sign-in {
+           border: 2px solid #4285f4;
+           border: none;
+           color: white;
+           font-weight: bold;
+           background-color: #0060fc;
+           padding: 5px 12px ;
+           text-align: center;
+       }
+    
+       
+       /*Center of page */
+       
+       #main {
+           flex-grow: 1;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           flex-direction: column;
+
+           
+       }
+        #search-container {
+            margin-top: 20px;
+
+        }
+        .search-icon {
+            position: absolute;
+            width: 25px;
+            height: 20px;
+            margin-top: 5px;
+            margin-left: 5px;
+        }
+        #search-bar {
+           padding: 10px 14px 10px 50px;
+           font-size: 16px;
+            width: 430px;
+            background: #fff;
+            border: 1px solid #dfe1e5;
+            border-radius: 24px; 
+            box-shadow: 0px 0px 10px 1px #BCCEDD;
+            outline: none;
+        }  
+        #search-bar:hover {
+            box-shadow: 1px 2px 10px 1px rgb(138, 129, 129);
+        }
+        
+            
+        #buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            text-decoration: none;
+        }
+        .button {
+            background-color: #f8f9fa;
+            border: 1px solid #f8f9fa;
+            border-radius: 4px;
+            color: #3c4043;
+            font-size: 14px;
+            margin: 11px 4px;
+            padding: 0px 16px;
+            line-height: 27px;
+            height: 36px;
+            min-width: 54px;
+            text-align: center;
+            cursor: pointer;
+            user-select: none;
+            
+
+
+
+
+
+        }
+        #buttons :hover{
+            box-shadow: 0 1px 1px  rgba(0,0,0,0.1);
+            background-color: #f8f9fa;
+            border: 1px solid #dadce0;
+            color: #202124;
+                           
+        }
+    /*Bottom of page */
+        footer {
+            font-size: 14px;
+        }
+        .navbar-bot {
+            display: flex;
+            margin-bottom: 20px;
+            margin-left: 20px;
+        }
+        .navbar-bot a{
+            margin-left: 20px;
+            
+        }
+        
+      
+        #botnav-left {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin: right;
+        }
+        #botnav-center {
+            display: flex;
+            margin: auto; 
+               
+        }
+        #botnav-right {
+            display: flex;
+            margin-left: auto;
+        }
+        
+        
+    </style>
+    
+    
+<head>
+    <title>Google</title>
+    <link rel="shortcut icon" type="image/png" href="image/google-indextest2.png">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div id="navbar-left">
+           <a href="#" id="about">About</a>
+           <a href="#" id="store">Store</a>
+            </div>
+            <div id="navbar-right">
+           <a href="#" id="gmail">Gmail</a>
+           <a href="#" id="images">Images</a>
+           <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAIVBMVEX///8AAAD09PTMzMyTk5PJycmQkJDl5eWWlpb6+vrOzs4U/fPXAAABRklEQVR4nO3cQW6DMBBAUQrYGO5/4HY/SRlZhCL3vf1E+bCKY3uaAAAAAAAAAACepdT1XNvD3JaZq1uY21tmrlxYWL8y5vhkUnPxm86puXph4dpZuKTmls7CplChQoUKFSpUqFChQoUKFSpUqFChQoUKFSpUqFChQoUKhylcLyxsnYVHau7oLLzyHe5zxovBj87FvR8AAADA77aynIuLEdOcmSsvfuQnxpYSz2n0c97iXaHVRIUKFSpUqFChQoUKFSpUqFChQoUKFSpUqFChQoUKFSpUeH/h+P/j374X47h7LwYAAAD8D+PfqdB7L0ZuJeoJ92I8c63tyrtNnlk4/jtUqFChQoUKFSpUqFChQoUKFSpUqFChQoUKFSpUqFChwk8Ujn/eotR2am1xb8SWmGs1npvYfz7tfC4+GQAAAAAAAACAv/UNuK1EHCwGtosAAAAASUVORK5CYII=" alt="google app store logo" class="smaller-image"></a>
+           <a href="#" ><button id="sign-in">Sign in</button></a>
+           </div>
+       </div>
+       </header>
+       <div id="main">
+                <a href="#" id="logo"><img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"alt="google logo">
+                </a>
+            <form action="#">
+                <div id="search-container">
+                    <i class="search-icon"><img src="image/iconfinder_ic_search_48px_3669253test2.png"></i>
+                <input type="text" id="search-bar">
+                </div>
+            <div id="buttons">
+            <button type="submit" class="button">Google Search</button>
+            <button type="submit" class="button">I'm feeling lucky</button>
+            </div>
+            </form>           
+       </div>
+       <footer>
+            <div class="navbar-bot">
+                
+                    <div id="botnav-left">
+                        <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwjL9oHmybztAhUPXK0KHYgBCkcQkdQCCBY&url=https%3A%2F%2Fwww.google.com%2Fintl%2Fen_us%2Fads%2F%3Fsubid%3Dww-ww-et-g-awa-a-g_hpafoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpafooter%26fg%3D1&usg=AOvVaw3XLzhicA5ZZW0afDbW0l2T">Advertising</a>
+                        <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwjL9oHmybztAhUPXK0KHYgBCkcQktQCCBc&url=https%3A%2F%2Fwww.google.com%2Fservices%2F%3Fsubid%3Dww-ww-et-g-awa-a-g_hpbfoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpbfooter%26fg%3D1&usg=AOvVaw2SJ4zwRVXKyZr53qG9dm4K">Business</a>
+                        <a href="https://google.com/search/howsearchworks/?fg=1">How Search works</a>
+                    </div>
+                    <div id="botnav-center">
+                        
+
+                        <a href="https://sustainability.google/commitments/?utm_source=googlehpfooter&utm_medium=housepromos&utm_campaign=bottom-footer&utm_content="><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAYCAMAAAAiV0Z6AAAAPFBMVEVLoEN0wU6CzFKCzFKCzFKCzFKCzFJSo0MSczNDmkCCzFJPoUMTczNdr0gmgziCzFITczMTczMTczMTczPh00jOAAAAFHRSTlPF/+bIsms8Ad///hX+//5/tXw7aMEAx10AAACaSURBVHgBbc4HDoRQCATQ33tbvf9dF9QxaCT9UQaltLHOh/golXKhMs5Xqa0xU1lyoa2fXFyQOsDG38qsLy4TaV+sFislovyhPzLJJrBu6eQOtpW0LjbJkzTuTDLRVNKa3uxJI+VdiRqXSeu6GW+Qxi29eLIi8H7EsYrT42BD+mQtNO5JMjRuC4lSY8V4hsLX0egGijvUSEP9AbylEsOkeCgWAAAAAElFTkSuQmCC" style="height: 14px;"> Carbon neutral since 2007</a>
+                    </div>
+                    <div id="botnav-right">
+                        <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwjL9oHmybztAhUPXK0KHYgBCkcQ8awCCBI&url=https%3A%2F%2Fpolicies.google.com%2Fprivacy%3Fhl%3Den%26fg%3D1&usg=AOvVaw25lN6TjyY2uszSImdhMejE">Privacy</a>
+                        <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwjL9oHmybztAhUPXK0KHYgBCkcQ8qwCCBM&url=https%3A%2F%2Fpolicies.google.com%2Fterms%3Fhl%3Den%26fg%3D1&usg=AOvVaw2d8Ahs2oc0jxVOgPfpr4Fe">Terms</a>
+                        <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwjL9oHmybztAhUPXK0KHYgBCkcQzq0CCBQ&url=https%3A%2F%2Fwww.google.com%2Fpreferences%3Fhl%3Den&usg=AOvVaw0XvhSqpc_GFt9aG_mRLp1F">Settings</a>
+                    </div>
+                    
+                </div>
+            
+       </footer>
+    </body>
+
+
+
+
+</html>
